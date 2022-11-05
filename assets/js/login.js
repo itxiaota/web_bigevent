@@ -27,7 +27,7 @@ $(function () {
   })
 
   $('#regForm').on('submit', function (e) {
-    console.log($(this));
+
     e.preventDefault();
     var data = { username: $('#regForm [name=username]').val(), password: $('#regForm [name=password]').val() }
     $.post('/api/reguser', data, function (res) {

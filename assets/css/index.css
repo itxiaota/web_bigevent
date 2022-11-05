@@ -39,4 +39,6 @@ a {
 
 .layui-body {
   overflow: hidden;
+  padding: 20px;
+  background-color: #f2f3f5;
 }
