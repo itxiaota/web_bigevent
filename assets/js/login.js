@@ -31,7 +31,7 @@ $(function () {
     e.preventDefault();
     var data = { username: $('#regForm [name=username]').val(), password: $('#regForm [name=password]').val() }
     $.post('/api/reguser', data, function (res) {
-      if (res.status != 0) return layer.msg(res.message)
+      if (res.status != 0) return layer.msg('注册失败')
 
       // 注册成功
       layer.msg('注册成功，请登录！')
@@ -51,7 +51,7 @@ $(function () {
       data: $(this).serialize(),
       success: function (res) {
         console.log(res);
-        if (res.status !== 0) return layer.msg(res.message)
+        if (res.status !== 0) return layer.msg('登录失败')
 
         // 保存 token
         localStorage.setItem('token', res.token)
