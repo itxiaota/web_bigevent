@@ -48,17 +48,17 @@
           欢迎 <span id="nickname">test</span>
         </div>
         <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
-        <ul class="layui-nav layui-nav-tree " lay-shrink="all">
+        <ul class="layui-nav layui-nav-tree " lay-shrink="all" lay-filter="left_nav">
 
           <li class="layui-nav-item layui-this">
-            <a class="" href="javascript:;"><span class="iconfont icon-home"></span>首页</a>
+            <a class="" href="/home/dashboard.html" target="fm"><span class="iconfont icon-home"></span>首页</a>
           </li>
           <li class="layui-nav-item">
             <a href="javascript:;"><span class="iconfont icon-16"></span>文章管理</a>
             <dl class="layui-nav-child">
-              <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>文章分类</a></dd>
-              <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>文章列表</a></dd>
-              <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>发布文章</a></dd>
+              <dd><a href="/article/artcate.html" target="fm"><i class="layui-icon layui-icon-app"></i>文章分类</a></dd>
+              <dd><a href="/article/artlist.html" target="fm"><i class="layui-icon layui-icon-app"></i>文章列表</a></dd>
+              <dd><a href="/article/artpub.html" target="fm"><i class="layui-icon layui-icon-app"></i>发布文章</a></dd>
             </dl>
           </li>
           <li class="layui-nav-item">
